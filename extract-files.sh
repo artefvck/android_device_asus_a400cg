@@ -4,7 +4,7 @@
 
 export VENDOR=asus
 export DEVICE_VENDOR=asus
-export DEVICE=A400CG
+export DEVICE=a400cg
 
 # Check to see if the user passed a folder in to extract from rather than adb pull
 if [ $# -eq 1 ]; then
