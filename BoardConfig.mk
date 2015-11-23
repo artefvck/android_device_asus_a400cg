@@ -17,7 +17,17 @@
 # Use the non-open-source parts, if they're present
 -include vendor/asus/a400cg/BoardConfigVendor.mk
 
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+
+TARGET_ARCH := x86
+TARGET_ARCH_VARIANT := x86-atom
+TARGET_CPU_ABI := x86
+TARGET_CPU_VARIANT := x86
+TARGET_CPU_ABI2 := armeabi-v7a
+TARGET_CPU_ABI_LIST := x86,armeabi-v7a,armeabi
+TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
+TARGET_CPU_SMP := true
+TARGET_BOARD_PLATFORM := clovertrail
+TARGET_BOOTLOADER_BOARD_NAME := EeePad
+
