@@ -34,4 +34,13 @@ PRODUCT_COPY_FILES += \
     device/asus/a400cg/configs/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
     device/asus/a400cg/configs/media_codecs.xml:system/etc/media_codecs.xml
 
+# specific audio
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    device/asus/a400cg/audio/asound.conf:system/etc/asound.conf \
+    device/asus/a400cg/audio/asound-vv.conf:system/etc/asound-vv.conf \
+    device/asus/a400cg/audio/audio_volume_curve.conf:system/etc/audio_volume_curve.conf \
+    device/asus/a400cg/audio/icesoundpresets.def:system/etc/icesoundpresets.def \
+    device/asus/a400cg/audio/route_criteria.conf:system/etc/route_criteria.conf
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
