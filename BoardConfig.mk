@@ -54,6 +54,16 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
 
+# Malloc Alignment
+BOARD_MALLOC_ALIGNMENT := 16
+
+# HW_Renderer
+USE_OPENGL_RENDERER := true
+EGL_SWAP_BEHAVIOR_PRESERVED := true
+
+# HWComposer
+BOARD_USES_HWCOMPOSER := true
+
 # Wifi
 BOARD_WLAN_DEVICE           := bcmdhd
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
