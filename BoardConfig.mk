@@ -31,3 +31,29 @@ TARGET_CPU_SMP := true
 TARGET_BOARD_PLATFORM := clovertrail
 TARGET_BOOTLOADER_BOARD_NAME := EeePad
 
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1782579200 # 1.7GByte
+BOARD_FLASH_BLOCK_SIZE := 131072
+BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216 # MByte
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216 # MByte
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+
+BOARD_KERNEL_BASE := 0x11000000
+BOARD_KERNEL_PAGESIZE := 2048
+cmdline_extra  := kmemleak=off androidboot.bootmedia=sdcard androidboot.hardware=redhookbay
+cmdline_extra1 := ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on vmalloc=384M androidboot.wakesrc=06 androidboot.mode=main loglevel=0
+cmdline_extra2 := watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789
+cmdline_extra3 := androidboot.selinux=enforcing ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on vmalloc=384M
+cmdline_extra4 := androidboot.selinux=permissive build_version=3 bootboost=1 androidboot.wakesrc=06 androidboot.mode=main
+BOARD_KERNEL_CMDLINE := init=/init pci=noearly console=logk0 earlyprintk=nologger $(cmdline_extra)  $(cmdline_extra1) $(cmdline_extra2) $(cmdline_extra3) $(cmdline_extra4)
+
+# Wifi
+BOARD_WLAN_DEVICE           := bcmdhd
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+WPA_SUPPLICANT_VERSION      := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_DRIVER        := NL80211
+WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
+WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_bcmdhd_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/fw_bcmdhd.bin"
