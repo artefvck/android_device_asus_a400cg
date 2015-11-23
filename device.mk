@@ -28,4 +28,10 @@ PRODUCT_COPY_FILES += \
         device/asus/a400cg/configs/bt_redhookbay_ttyMFD0.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD0.conf \
         device/asus/a400cg/configs/bt_redhookbay_ttyMFD3.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD3.conf
 
+#media
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    device/asus/a400cg/configs/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
+    device/asus/a400cg/configs/media_codecs.xml:system/etc/media_codecs.xml
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
