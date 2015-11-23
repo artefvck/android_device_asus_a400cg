@@ -51,6 +51,9 @@ BOARD_EGL_CFG := device/asus/a400cg/egl.cfg
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
+# Use dlmalloc
+MALLOC_IMPL := dlmalloc
+
 # Wifi
 BOARD_WLAN_DEVICE           := bcmdhd
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
