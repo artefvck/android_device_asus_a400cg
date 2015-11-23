@@ -23,4 +23,9 @@ endif
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
 
+#bluetooth
+PRODUCT_COPY_FILES += \
+        device/asus/a400cg/configs/bt_redhookbay_ttyMFD0.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD0.conf \
+        device/asus/a400cg/configs/bt_redhookbay_ttyMFD3.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD3.conf
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
