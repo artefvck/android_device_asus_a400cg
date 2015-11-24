@@ -127,6 +127,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	system/core/rootdir/init.rc:root/init.extra.rc
 
+PRODUCT_COPY_FILES += \
+	device/asus/a400cg/rootdir/sbin/intel_prop:recovery/root/sbin/intel_prop \
+	device/asus/a400cg/rootdir/sbin/pclinkd:recovery/root/sbin/pclinkd \
+	device/asus/a400cg/rootdir/sbin/thermald:recovery/root/sbin/thermald
+
 # Charger
 PRODUCT_PACKAGES += \
     charger \
