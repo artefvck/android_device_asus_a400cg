@@ -73,6 +73,9 @@ EGL_SWAP_BEHAVIOR_PRESERVED := true
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
 
+# Allow HWC to perform a final CSC on virtual displays
+TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
+
 # Wifi
 BOARD_WLAN_DEVICE           := bcmdhd
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
