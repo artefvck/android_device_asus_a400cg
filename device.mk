@@ -237,6 +237,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm
 
+# AOSP and contains Intel optimizations to the compiler.
+PRODUCT_PACKAGES += libart-extension
 
 # Set the prop to enable arm native bridge
 ADDITIONAL_DEFAULT_PROPERTIES += ro.dalvik.vm.native.bridge=libhoudini.so
