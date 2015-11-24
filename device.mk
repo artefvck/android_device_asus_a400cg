@@ -255,6 +255,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libI420colorconvert
 
+# Intel multiple display
+PRODUCT_PACKAGES += \
+    libmultidisplay \
+    libmultidisplayjni \
+    com.intel.multidisplay \
+    com.intel.multidisplay.xml
+
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
