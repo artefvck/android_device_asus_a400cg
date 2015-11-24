@@ -295,6 +295,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
     ro.adb.secure=0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.dalvik.vm.isa.arm=x86 \
+    ro.enable.native.bridge.exec=1
+
 # bt
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.gnss.sv.status=true \
