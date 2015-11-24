@@ -164,4 +164,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.app_widgets.xml:system/etc/permissions/android.software.app_widgets.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
 
+# Tinyalsa
+PRODUCT_PACKAGES += \
+    tinyplay \
+    tinycap \
+    tinymix
+
+# Audio
+PRODUCT_PACKAGES += \
+    libtinycompress \
+    libtinyalsa \
+    audio.a2dp.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudioutils
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
