@@ -212,4 +212,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstagefrighthw
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    e2fsck \
+    tune2fs \
+    resize2fs \
+    make_ext4fs \
+    setup_fs
+
+# library 
+PRODUCT_PACKAGES += \
+    libtinyxml \
+    minizip \
+    openssl \
+    pack_intel \
+    unpack_intel
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
