@@ -228,4 +228,7 @@ PRODUCT_PACKAGES += \
     pack_intel \
     unpack_intel
 
+PRODUCT_PACKAGES += \
+    lights.redhookbay
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
