@@ -149,6 +149,10 @@ PRODUCT_COPY_FILES += \
         device/asus/a400cg/gps/gpsd:system/bin/gpsd \
         device/asus/a400cg/gps/gpslogd:system/bin/gpslogd
 
+#atproxy_usbreset
+PRODUCT_COPY_FILES += \
+        device/asus/a400cg/atproxy_usbreset:system/bin/atproxy_usbreset
+
 # permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
