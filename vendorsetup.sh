@@ -14,4 +14,11 @@
 # limitations under the License.
 #
 
+add_lunch_combo cm_A400CG-userdebug
+add_lunch_combo cm_A400CG-user
+add_lunch_combo cm_A400CG-eng
+add_lunch_combo aosp_A400CG-userdebug
+add_lunch_combo aosp_A400CG-user
+add_lunch_combo aosp_A400CG-eng
 add_lunch_combo full_a400cg-userdebug
+
