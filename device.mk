@@ -288,6 +288,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.debuggable=1 \
+    ro.allow.mock.location=1 \
+    persist.sys.usb.config=mtp \
+    ro.secure=0 \
+    ro.adb.secure=0
+
 # bt
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.gnss.sv.status=true \
