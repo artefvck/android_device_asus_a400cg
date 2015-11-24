@@ -31,6 +31,7 @@ TARGET_CPU_SMP := true
 TARGET_BOARD_PLATFORM := clovertrail
 TARGET_BOOTLOADER_BOARD_NAME := EeePad
 TARGET_BOARD_KERNEL_HEADERS := device/asus/a400cg/kernel-headers
+TARGET_SPECIFIC_HEADER_PATH := device/asus/a400cg/include
 # Hardware
 BOARD_HARDWARE_CLASS := device/asus/a400cg/cmhw
 
