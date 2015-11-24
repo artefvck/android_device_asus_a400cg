@@ -105,6 +105,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	system/core/rootdir/init.rc:root/init.extra.rc
 
+
+# Wifi
+PRODUCT_COPY_FILES += \
+        device/asus/a400cg/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
+        device/asus/a400cg/wifi/hostapd.conf:system/etc/wifi/hostapd.conf \
+        device/asus/a400cg/wifi/TQS.ini:system/etc/wifi/TQS.ini
+
+PRODUCT_PACKAGES += \
+	wpa_supplicant_overlay.conf \
+	p2p_supplicant.conf
+	
 # permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
