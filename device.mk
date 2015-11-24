@@ -268,6 +268,10 @@ PRODUCT_PACKAGES += \
     com.intel.camera.extensions \
     com.intel.camera.extensions.xml
 
+#feature_config
+PRODUCT_PACKAGES += \
+	com.intel.config
+
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
