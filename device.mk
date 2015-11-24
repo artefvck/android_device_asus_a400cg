@@ -264,6 +264,9 @@ PRODUCT_PACKAGES += \
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp
 
+#enable Widevine drm
+PRODUCT_PROPERTY_OVERRIDES += drm.service.enabled=true
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/librapid-ril-core.so \
 	ro.streaming.video.drs=true \
