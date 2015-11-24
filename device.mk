@@ -250,6 +250,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm
 
+
+# libI420colorconvert
+PRODUCT_PACKAGES += \
+	libI420colorconvert
+
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
