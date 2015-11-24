@@ -127,6 +127,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	system/core/rootdir/init.rc:root/init.extra.rc
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
 
 # Wifi
 PRODUCT_COPY_FILES += \
