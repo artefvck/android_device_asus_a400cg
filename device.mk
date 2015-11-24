@@ -180,4 +180,28 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudioutils
 
+# libmix
+PRODUCT_PACKAGES += \
+    libmixvbp \
+    libmixvbp_h264 \
+    libmixvbp_h264secure \
+    libmixvbp_mpeg4 \
+    libmixvbp_vc1
+
+PRODUCT_PACKAGES += \
+    msvdx_bin \
+    topaz_bin
+
+PRODUCT_PACKAGES += \
+    libmix_imagedecoder \
+    libmix_imageencoder
+
+# psb video
+PRODUCT_PACKAGES += \
+    pvr_drv_video
+
+# stagefright
+PRODUCT_PACKAGES += \
+    libstagefrighthw
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
