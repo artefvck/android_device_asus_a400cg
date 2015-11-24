@@ -31,6 +31,9 @@ TARGET_CPU_SMP := true
 TARGET_BOARD_PLATFORM := clovertrail
 TARGET_BOOTLOADER_BOARD_NAME := EeePad
 
+# Hardware
+BOARD_HARDWARE_CLASS := device/asus/a400cg/cmhw
+
 #Kernel Build from source
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 TARGET_KERNEL_CONFIG := cyanogenmod_a400cg_defconfig
