@@ -30,7 +30,7 @@ TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
 TARGET_CPU_SMP := true
 TARGET_BOARD_PLATFORM := clovertrail
 TARGET_BOOTLOADER_BOARD_NAME := EeePad
-
+TARGET_BOARD_KERNEL_HEADERS := device/asus/a400cg/kernel-headers
 # Hardware
 BOARD_HARDWARE_CLASS := device/asus/a400cg/cmhw
 
