@@ -38,6 +38,14 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # cm overlay
 DEVICE_PACKAGE_OVERLAYS += device/asus/a400cg/overlay
 
+# Wifi
+PRODUCT_PACKAGES += \
+  libwpa_client \
+  hostapd \
+  dhcpcd.conf \
+  wpa_supplicant \
+  wpa_supplicant.conf
+
 #bluetooth
 PRODUCT_COPY_FILES += \
         device/asus/a400cg/configs/bt_redhookbay_ttyMFD0.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD0.conf \
@@ -174,7 +182,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyalsa \
-    audio.a2dp.default \
+    audio.a2dp.default \artefvck
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
