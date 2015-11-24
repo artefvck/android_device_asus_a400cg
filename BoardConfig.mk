@@ -108,6 +108,10 @@ USE_HW_VP8 := true
 USE_INTEL_SECURE_AVC := true
 SW_MPEG4_ENCODER := true
 
+# mds / multidislayservice
+TARGET_HAS_MULTIPLE_DISPLAY := true
+USE_MDS_LEGACY := true
+USE_INTEL_MDP := true
 
 # DRM Protected Video
 BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 1
