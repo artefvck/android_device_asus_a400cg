@@ -275,6 +275,9 @@ PRODUCT_PACKAGES += \
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
+# set USB OTG enabled to add support for USB storage type
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.isUsbOtgEnabled=true
+
 # Set the prop to enable arm native bridge
 ADDITIONAL_DEFAULT_PROPERTIES += ro.dalvik.vm.native.bridge=libhoudini.so
 
