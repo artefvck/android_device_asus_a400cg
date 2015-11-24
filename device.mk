@@ -332,6 +332,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XDoze
 
+PRODUCT_PACKAGES += \
+    Stk
+
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
