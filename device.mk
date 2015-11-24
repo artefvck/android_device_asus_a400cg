@@ -233,4 +233,8 @@ PRODUCT_PACKAGES += \
     power.redhookbay \
     libwsbm
 
+# libdrm
+PRODUCT_PACKAGES += \
+    libdrm
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
