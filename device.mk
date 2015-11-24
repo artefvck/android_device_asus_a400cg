@@ -246,4 +246,7 @@ PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
+# Set default USB interface
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
