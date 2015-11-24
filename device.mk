@@ -448,5 +448,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.telproviders.debug=0 \
     ro.ime.lowmemory=false
 
+# Add WiFi Firmware
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335/device-bcm.mk)
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
