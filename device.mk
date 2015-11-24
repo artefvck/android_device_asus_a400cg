@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyalsa \
-    audio.a2dp.default \artefvck
+    audio.a2dp.default \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
