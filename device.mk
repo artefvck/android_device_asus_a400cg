@@ -280,6 +280,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=9 \
 	ro.telephony.ril_class=AsusRIL
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=0 \
+    persist.tel.lteOnGsmDevice=false \
+    persist.radio.multisim.config=dsds \
+    persist.tel.hot_swap.support=true
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote32
 
 PRODUCT_PROPERTY_OVERRIDES += \
