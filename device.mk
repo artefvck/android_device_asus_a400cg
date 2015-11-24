@@ -328,6 +328,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.cyanogenmod.keyhandler
 
+#doze
+PRODUCT_PACKAGES += \
+    XDoze
+
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
