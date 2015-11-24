@@ -338,5 +338,33 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.gps.testmode=disabled \
 	gsm.net.interface=rmnet0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    ro.blankphone_id=1 \
+    ro.contact.simtype=1 \
+    ro.camera.sound.forced=0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapminfree=4m
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hwui.texture_cache_size=20.0f \
+    ro.hwui.texture_cache_flushrate=0.75f \
+    ro.hwui.text_small_cache_width=1024 \
+    ro.hwui.text_small_cache_height=256 \
+    ro.hwui.text_large_cache_width=2048 \
+    ro.hwui.text_large_cache_height=256
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dalvik.vm.lib.2=libart.so \
+    ro.ril.status.polling.enable=0 \
+    rs.gpu.renderscript=0 \
+    rs.gpu.filterscript=0 \
+    rs.gpu.rsIntrinsic=0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.telproviders.debug=0 \
+    ro.ime.lowmemory=false
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
