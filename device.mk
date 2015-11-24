@@ -136,6 +136,19 @@ PRODUCT_PACKAGES += \
 	wpa_supplicant_overlay.conf \
 	p2p_supplicant.conf
 	
+# GPS
+PRODUCT_COPY_FILES += \
+        device/asus/a400cg/gps/gpsconfig_debug.xml:system/etc/gpsconfig_debug.xml \
+        device/asus/a400cg/gps/gpsconfig_user.xml:system/etc/gpsconfig_user.xml \
+        device/asus/a400cg/gps/libgps.conf:system/etc/libgps.conf \
+        device/asus/a400cg/gps/gps.conf:system/etc/gps.conf \
+        device/asus/a400cg/gps/gpsd_mgr.sh:system/etc/gpsd_mgr.sh
+
+PRODUCT_COPY_FILES += \
+        device/asus/a400cg/gps/get-gps-lto:system/bin/get-gps-lto \
+        device/asus/a400cg/gps/gpsd:system/bin/gpsd \
+        device/asus/a400cg/gps/gpslogd:system/bin/gpslogd
+
 # permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
