@@ -290,5 +290,14 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	bt.version.driver=V21.23.45.2.0 \
 	ro.bt.uart=ttyMFD0
 
+#gps
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	gps.version.driver=6.19.6.216527 \
+	persist.gps.ignore_rom_alm=0 \
+	ril.agpschannel=/dev/gsmtty7 \
+	persist.gps.psm=enabled \
+	persist.gps.testmode=disabled \
+	gsm.net.interface=rmnet0
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
