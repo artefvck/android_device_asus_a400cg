@@ -46,4 +46,39 @@ PRODUCT_COPY_FILES += \
     device/asus/a400cg/audio/icesoundpresets.def:system/etc/icesoundpresets.def \
     device/asus/a400cg/audio/route_criteria.conf:system/etc/route_criteria.conf
 
+# init
+PRODUCT_PACKAGES += \
+	fstab \
+	fstab.charger.redhookbay \
+	fstab.ramconsole.redhookbay \
+	fstab.redhookbay \
+	fstab.zram \
+	init.avc.rc \
+	init.bt.rc \
+	init.bt.vendor.rc \
+	init.camera_cali.rc \
+	init.common.rc \
+	init.debug.rc \
+	init.diag.rc \
+	init.firmware.rc \
+	init.gps.rc \
+	init.logtool.rc \
+	init.modem.rc \
+	init.platform.usb.rc \
+	init.project.rc \
+	init.recovery.redhookbay.rc \
+	init.redhookbay.rc \
+	init.watchdog.rc \
+	init.wifi.rc \
+	init.wifi.vendor.rc \
+	init.wireless.rc \
+	init.zram.rc \
+	intel_prop.cfg \
+	rfkill_bt.sh \
+	ueventd.project.rc \
+	ueventd.redhookbay.rc \
+	intel_prop \
+	thermald \
+	pclinkd
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
