@@ -60,6 +60,9 @@ BOARD_EGL_CFG := device/asus/a400cg/egl.cfg
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
 
