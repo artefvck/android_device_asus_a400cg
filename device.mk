@@ -163,7 +163,6 @@ PRODUCT_COPY_FILES += \
 #logtoold##############################################################################################
 PRODUCT_COPY_FILES += \
     device/asus/a400cg/logtoold/asus_mts:system/bin/asus_mts \
-    device/asus/a400cg/logtoold/busybox:system/bin/busybox \
     device/asus/a400cg/logtoold/klogdog:system/bin/klogdog \
     device/asus/a400cg/logtoold/logdog:system/bin/logdog \
     device/asus/a400cg/logtoold/logt_bootup:system/bin/logt_bootup \
@@ -238,6 +237,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.software.app_widgets.xml:system/etc/permissions/android.software.app_widgets.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+
+# Prebuilt busybox
+PRODUCT_PACKAGES += \
+    busybox_binary
 
 # Tinyalsa
 PRODUCT_PACKAGES += \
