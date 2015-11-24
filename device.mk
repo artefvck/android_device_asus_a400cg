@@ -229,6 +229,8 @@ PRODUCT_PACKAGES += \
     unpack_intel
 
 PRODUCT_PACKAGES += \
-    lights.redhookbay
+    lights.redhookbay \
+    power.redhookbay \
+    libwsbm
 
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
