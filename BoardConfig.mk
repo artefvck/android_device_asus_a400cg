@@ -65,6 +65,9 @@ cmdline_extra3 := androidboot.selinux=enforcing ip=50.0.0.2:50.0.0.1::255.255.25
 cmdline_extra4 := androidboot.selinux=permissive build_version=3 bootboost=1 androidboot.wakesrc=06 androidboot.mode=main
 BOARD_KERNEL_CMDLINE := init=/init pci=noearly console=logk0 earlyprintk=nologger $(cmdline_extra)  $(cmdline_extra1) $(cmdline_extra2) $(cmdline_extra3) $(cmdline_extra4)
 
+# SELinux
+-include device/asus/a400cg/sepolicy/Sepolicy.mk
+
 BOARD_EGL_CFG := device/asus/a400cg/egl.cfg
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
