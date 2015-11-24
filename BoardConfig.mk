@@ -126,4 +126,8 @@ INTEL_HOUDINI := true
 # Appends path to ARM libs for Houdini
 PRODUCT_LIBRARY_PATH := $(PRODUCT_LIBRARY_PATH):/system/lib/arm
 
+# Radio
+BOARD_RIL_SUPPORTS_MULTIPLE_CLIENTS := true
+BOARD_RIL_CLASS := ../../../device/asus/a400cg/ril
+
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/a400cg/boot-tools/boot.mk

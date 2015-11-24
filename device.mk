@@ -249,5 +249,13 @@ PRODUCT_PACKAGES += \
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	rild.libpath=/system/lib/librapid-ril-core.so \
+	ro.streaming.video.drs=true \
+	keyguard.no_require_sim=true \
+	ro.com.android.dataroaming=true \
+	ro.telephony.default_network=9 \
+	ro.telephony.ril_class=AsusRIL
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
