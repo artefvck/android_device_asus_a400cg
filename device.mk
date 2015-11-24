@@ -31,11 +31,16 @@ PRODUCT_COPY_FILES += \
         device/asus/a400cg/configs/bt_redhookbay_ttyMFD0.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD0.conf \
         device/asus/a400cg/configs/bt_redhookbay_ttyMFD3.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD3.conf
 
-#media
+# media
 PRODUCT_COPY_FILES += \
     device/asus/a400cg/configs/media_profiles.xml:system/etc/media_profiles.xml \
     device/asus/a400cg/configs/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
     device/asus/a400cg/configs/media_codecs.xml:system/etc/media_codecs.xml
+
+PRODUCT_COPY_FILES += \
+     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml
 
 # specific audio
 PRODUCT_COPY_FILES += \
