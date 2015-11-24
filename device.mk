@@ -303,6 +303,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     persist.tel.hot_swap.support=true
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	persist.ril-daemon.disable=0 \
+	persist.radio.ril_modem_state=1
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote32
 
 PRODUCT_PROPERTY_OVERRIDES += \
