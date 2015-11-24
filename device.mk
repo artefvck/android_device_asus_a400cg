@@ -409,6 +409,23 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
     ro.adb.secure=0
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.config.low_ram=false \
+    ro.ril.status.polling.enable=0 \
+    ro.product.cpu.abi2=armeabi-v7a \
+    ro.config.personality=compat_layout
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.sf.lcd_density=240 \
+    ro.opengles.version=131072 \
+    gsm.net.interface=rmnet0 \
+    persist.system.at-proxy.mode=0 \
+    ro.dalvik.vm.native.bridge=libhoudini.so \
+    dalvik.vm.dex2oat-Xms=64m \
+    dalvik.vm.dex2oat-Xmx=512m \
+    dalvik.vm.image-dex2oat-Xms=64m \
+    dalvik.vm.image-dex2oat-Xmx=64m
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.dalvik.vm.isa.arm=x86 \
     ro.enable.native.bridge.exec=1
