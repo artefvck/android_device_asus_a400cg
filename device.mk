@@ -81,4 +81,11 @@ PRODUCT_PACKAGES += \
 	thermald \
 	pclinkd
 
+# Only copy init.rc if the target doesn't have its own.
+PRODUCT_COPY_FILES += \
+	device/asus/a400cg/rootdir/etc/init.rc:root/init.rc
+
+PRODUCT_COPY_FILES += \
+	system/core/rootdir/init.rc:root/init.extra.rc
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
