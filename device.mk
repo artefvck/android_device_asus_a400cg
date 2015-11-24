@@ -38,6 +38,8 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # cm overlay
 DEVICE_PACKAGE_OVERLAYS += device/asus/a400cg/overlay
 
+PRODUCT_CHARACTERISTICS := default
+
 # Wifi
 PRODUCT_PACKAGES += \
   libwpa_client \
