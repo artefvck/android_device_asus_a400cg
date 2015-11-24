@@ -262,6 +262,12 @@ PRODUCT_PACKAGES += \
     com.intel.multidisplay \
     com.intel.multidisplay.xml
 
+# IntelCamera Parameters extensions
+PRODUCT_PACKAGES += \
+    libintelcamera_jni \
+    com.intel.camera.extensions \
+    com.intel.camera.extensions.xml
+
 # AOSP and contains Intel optimizations to the compiler.
 PRODUCT_PACKAGES += libart-extension
 
