@@ -250,3 +250,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp
 
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)

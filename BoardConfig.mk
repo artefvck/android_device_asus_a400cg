@@ -105,4 +105,11 @@ USE_HW_VP8 := true
 USE_INTEL_SECURE_AVC := true
 SW_MPEG4_ENCODER := true
 
+# enable ARM codegen for x86 with Houdini
+BUILD_ARM_FOR_X86 := true
+INTEL_HOUDINI := true
+
+# Appends path to ARM libs for Houdini
+PRODUCT_LIBRARY_PATH := $(PRODUCT_LIBRARY_PATH):/system/lib/arm
+
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/a400cg/boot-tools/boot.mk
