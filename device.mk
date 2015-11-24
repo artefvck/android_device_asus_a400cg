@@ -13,16 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifeq ($(USE_KERNEL_INLINE), true)
+ ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/asus/a400cg-kernel/kernel
-else
+ else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+ endif
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
-
+endif # USE_KERNEL_INLINE
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
