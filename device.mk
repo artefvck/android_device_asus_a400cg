@@ -153,6 +153,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         device/asus/a400cg/atproxy_usbreset:system/bin/atproxy_usbreset
 
+#configure trace modem
+PRODUCT_COPY_FILES += \
+               device/asus/a400cg/activate_trace_modem:system/bin/activate_trace_modem \
+               device/asus/a400cg/configure_trace_modem:system/bin/configure_trace_modem
+
 # permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
