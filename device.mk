@@ -283,5 +283,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+# bt
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	ro.gnss.sv.status=true \
+	ro.bluetooth.le=2 \
+	bt.version.driver=V21.23.45.2.0 \
+	ro.bt.uart=ttyMFD0
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
