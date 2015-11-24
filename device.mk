@@ -272,5 +272,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=9 \
 	ro.telephony.ril_class=AsusRIL
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote32
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240 \
+    ro.opengles.version=131072
+
+PRODUCT_TAGS += dalvik.gc.type-precise
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/houdini/houdini.mk)
