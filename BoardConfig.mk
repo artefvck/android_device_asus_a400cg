@@ -38,6 +38,8 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216 # MByte
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216 # MByte
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
+TARGET_RECOVERY_FSTAB := device/asus/A400CG/recovery.fstab
+
 BOARD_KERNEL_BASE := 0x11000000
 BOARD_KERNEL_PAGESIZE := 2048
 cmdline_extra  := kmemleak=off androidboot.bootmedia=sdcard androidboot.hardware=redhookbay
