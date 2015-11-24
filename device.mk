@@ -307,6 +307,13 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.ril-daemon.disable=0 \
 	persist.radio.ril_modem_state=1
 
+#dalvik
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	dalvik.vm.dex2oat-Xms=64m \
+	dalvik.vm.dex2oat-Xmx=512m \
+	dalvik.vm.image-dex2oat-Xms=64m \
+	dalvik.vm.image-dex2oat-Xmx=64m
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote32
 
 PRODUCT_PROPERTY_OVERRIDES += \
