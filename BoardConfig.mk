@@ -54,6 +54,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 TARGET_RECOVERY_FSTAB := device/asus/a400cg/recovery.fstab
 
+BOARD_CUSTOM_BOOTIMG_MK := device/asus/a400cg/boot-tools/boot.mk
+
 BOARD_KERNEL_BASE := 0x11000000
 BOARD_KERNEL_PAGESIZE := 2048
 cmdline_extra  := kmemleak=off androidboot.bootmedia=sdcard androidboot.hardware=redhookbay
@@ -143,4 +145,6 @@ BOARD_FUNCTIONFS_HAS_SS_COUNT := true
 # Init
 TARGET_IGNORE_RO_BOOT_SERIALNO := true
 
-BOARD_CUSTOM_BOOTIMG_MK := device/asus/a400cg/boot-tools/boot.mk
+# Include an expanded selection of fonts
+EXTENDED_FONT_FOOTPRINT := true
+
