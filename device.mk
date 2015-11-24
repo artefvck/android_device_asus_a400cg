@@ -241,4 +241,9 @@ PRODUCT_PACKAGES += \
 # Set the prop to enable arm native bridge
 ADDITIONAL_DEFAULT_PROPERTIES += ro.dalvik.vm.native.bridge=libhoudini.so
 
+# usb
+PRODUCT_PACKAGES += \
+    librs_jni \
+    com.android.future.usb.accessory
+
 $(call inherit-product-if-exists, vendor/asus/a400cg/device-vendor.mk)
