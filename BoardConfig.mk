@@ -35,6 +35,9 @@ TARGET_SPECIFIC_HEADER_PATH := device/asus/a400cg/include
 # Hardware
 BOARD_HARDWARE_CLASS := device/asus/a400cg/cmhw
 
+# intel bootclass path
+PRODUCT_BOOT_JARS += com.intel.config com.intel.multidisplay
+
 #Kernel Build from source
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 TARGET_KERNEL_CONFIG := cyanogenmod_a400cg_defconfig
