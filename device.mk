@@ -158,6 +158,49 @@ PRODUCT_COPY_FILES += \
                device/asus/a400cg/activate_trace_modem:system/bin/activate_trace_modem \
                device/asus/a400cg/configure_trace_modem:system/bin/configure_trace_modem
 
+#logtoold##############################################################################################
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/logtoold/asus_mts:system/bin/asus_mts \
+    device/asus/a400cg/logtoold/busybox:system/bin/busybox \
+    device/asus/a400cg/logtoold/klogdog:system/bin/klogdog \
+    device/asus/a400cg/logtoold/logdog:system/bin/logdog \
+    device/asus/a400cg/logtoold/logt_bootup:system/bin/logt_bootup \
+    device/asus/a400cg/logtoold/logt_bootup_cos:system/bin/logt_bootup_cos \
+    device/asus/a400cg/logtoold/logt_bootup_mos:system/bin/logt_bootup_mos \
+    device/asus/a400cg/logtoold/logt_cosklogdog:system/bin/logt_cosklogdog \
+    device/asus/a400cg/logtoold/logt_coslogdog:system/bin/logt_coslogdog \
+    device/asus/a400cg/logtoold/logt_onechance:system/bin/logt_onechance \
+    device/asus/a400cg/logtoold/start_modem_setting:system/bin/start_modem_setting \
+    device/asus/a400cg/logtoold/stop_modem_setting:system/bin/stop_modem_setting \
+    device/asus/a400cg/logtoold/proxy:system/bin/proxy \
+    device/asus/a400cg/logtoold/uts_bootup:system/bin/uts_bootup
+
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/logtoold/EmptyActivity.obj:system/bin/EmptyActivity.obj \
+    device/asus/a400cg/logtoold/monkey_test:system/bin/monkey_test \
+    device/asus/a400cg/logtoold/profiling:system/bin/profiling
+
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/logtoold/scripts/monkey/EmptyActivity.obj:system/scripts/monkey/EmptyActivity.obj \
+    device/asus/a400cg/logtoold/scripts/monkey/monkey_test_a:system/scripts/monkey/monkey_test_a \
+    device/asus/a400cg/logtoold/scripts/monkey/monkey_test_p:system/scripts/monkey/monkey_test_p \
+    device/asus/a400cg/logtoold/scripts/monkey/package_list.txt:system/scripts/monkey/package_list.txt \
+    device/asus/a400cg/logtoold/scripts/monkey/profiling:system/scripts/monkey/profiling \
+    device/asus/a400cg/logtoold/scripts/monkey/script2log:system/scripts/monkey/script2log \
+    device/asus/a400cg/logtoold/scripts/monkey/TestIME.obj:system/scripts/monkey/TestIME.obj \
+    device/asus/a400cg/logtoold/scripts/monkey/timer:system/scripts/monkey/timer
+
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/logtoold/logdog-events.conf:system/etc/logdog-events.conf \
+    device/asus/a400cg/logtoold/logdog-main.conf:system/etc/logdog-main.conf \
+    device/asus/a400cg/logtoold/logdog-radio.conf:system/etc/logdog-radio.conf \
+    device/asus/a400cg/logtoold/logdog-system.conf:system/etc/logdog-system.conf \
+    device/asus/a400cg/logtoold/pnpDump.sh:system/etc/pnpDump.sh \
+    device/asus/a400cg/logtoold/pwr-balance.sh:system/etc/pwr-balance.sh \
+    device/asus/a400cg/logtoold/pwr-normal.sh:system/etc/pwr-normal.sh \
+    device/asus/a400cg/logtoold/tcpDump.sh:system/etc/tcpDump.sh
+
+##########################################################
 # permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
