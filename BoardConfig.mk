@@ -134,4 +134,10 @@ PRODUCT_LIBRARY_PATH := $(PRODUCT_LIBRARY_PATH):/system/lib/arm
 BOARD_RIL_SUPPORTS_MULTIPLE_CLIENTS := true
 BOARD_RIL_CLASS := ../../../device/asus/a400cg/ril
 
+# Adb
+BOARD_FUNCTIONFS_HAS_SS_COUNT := true
+
+# Init
+TARGET_IGNORE_RO_BOOT_SERIALNO := true
+
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/a400cg/boot-tools/boot.mk
