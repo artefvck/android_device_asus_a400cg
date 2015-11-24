@@ -42,6 +42,18 @@ PRODUCT_COPY_FILES += \
      frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
      frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml
 
+# video decoder encoder
+PRODUCT_PACKAGES += \
+    libwrs_omxil_common \
+    libwrs_omxil_core_pvwrapped \
+    libOMXVideoDecoderAVC \
+    libOMXVideoDecoderH263 \
+    libOMXVideoDecoderMPEG4 \
+    libOMXVideoDecoderWMV \
+    libOMXVideoEncoderAVC \
+    libOMXVideoEncoderH263 \
+    libOMXVideoEncoderMPEG4
+
 # specific audio
 PRODUCT_COPY_FILES += \
     device/asus/a400cg/audio/audio_policy.conf:system/etc/audio_policy.conf \
