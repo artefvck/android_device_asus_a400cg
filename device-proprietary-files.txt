@@ -327,22 +327,6 @@ lib/parameter-framework-plugins/System/libproperty-subsystem.so
 
 media/cameraConfig/config.dat
 
-usr/idc/himax-touchscreen.idc
-usr/idc/rmi4_ts.idc
-usr/idc/Vendor_0b05_Product_17fc.idc
-usr/idc/Vendor_0b05_Product_1803.idc
-usr/keychars/himax-touchscreen.kcm
-usr/keylayout/ASUS_TransKeyboard.kl
-usr/keylayout/cloverview_audio_Intel_MID_Audio_Jack.kl
-usr/keylayout/gpio-keys.kl
-usr/keylayout/himax-touchscreen.kl
-usr/keylayout/intel_short_long_press.kl
-usr/keylayout/rmi4_key.kl
-usr/keylayout/rmi4_key_gff.kl
-usr/keylayout/Vendor_0b05_Product_17fc.kl
-usr/keylayout/Vendor_0b05_Product_1803.kl
-usr/keylayout/Vendor_0b05_Product_4500.kl
-
 usr/share/alsa/alsa.conf
 
 vendor/bin/pvrsrvctl

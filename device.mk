@@ -48,6 +48,17 @@ PRODUCT_PACKAGES += \
   wpa_supplicant \
   wpa_supplicant.conf
 
+# Key layout files
+PRODUCT_COPY_FILES += \
+    device/asus/a400cg/keylayout/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
+    device/asus/a400cg/keylayout/himax-touchscreen.kcm:system/usr/keychars/himax-touchscreen.kcm \
+    device/asus/a400cg/keylayout/himax-touchscreen.kl:system/usr/keylayout/himax-touchscreen.kl \
+    device/asus/a400cg/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/asus/a400cg/keylayout/cloverview_audio_Intel_MID_Audio_Jack.kl:system/usr/keylayout/cloverview_audio_Intel_MID_Audio_Jack.kl \
+    device/asus/a400cg/keylayout/Vendor_0b05_Product_17fc.kl:system/usr/keylayout/Vendor_0b05_Product_17fc.kl \
+    device/asus/a400cg/keylayout/Vendor_0b05_Product_1803.kl:system/usr/keylayout/Vendor_0b05_Product_1803.kl \
+    device/asus/a400cg/keylayout/Vendor_0b05_Product_4500.kl:system/usr/keylayout/Vendor_0b05_Product_4500.kl
+
 #bluetooth
 PRODUCT_COPY_FILES += \
         device/asus/a400cg/configs/bt_redhookbay_ttyMFD0.conf:system/etc/bluetooth/bt_redhookbay_ttyMFD0.conf \
