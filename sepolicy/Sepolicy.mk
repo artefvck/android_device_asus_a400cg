@@ -1,6 +1,6 @@
 HAVE_SELINUX := true
 
-BOARD_SEPOLICY_DIRS += device/asus/A400CG/sepolicy
+BOARD_SEPOLICY_DIRS += device/asus/a400cg/sepolicy
 
 BOARD_SEPOLICY_UNION += \
               file_contexts \
