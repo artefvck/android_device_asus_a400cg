@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/asus/A400CG/full_a400cg.mk)
+$(call inherit-product, device/asus/a400cg/full_a400cg.mk)
 
 PRODUCT_NAME := aosp_a400cg
